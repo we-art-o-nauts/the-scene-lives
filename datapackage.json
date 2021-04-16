@@ -11,13 +11,15 @@
   }],
   "sources": [
     {
-      "name": "Demozoo",
+      "name": "demozoo",
+      "title": "Demozoo",
       "web": "http://demozoo.org/"
     }
   ],
   "resources": [
     {
       "name": "productions",
+      "title": "Productions",
       "path": "data/productions_production.100.csv",
       "profile": "tabular-data-resource",
       "schema": {
@@ -50,12 +52,12 @@
           {
             "name": "created_at",
             "type": "datetime",
-            "format": "default"
+            "format": "any"
           },
           {
             "name": "updated_at",
             "type": "datetime",
-            "format": "default"
+            "format": "any"
           },
           {
             "name": "supertype",
