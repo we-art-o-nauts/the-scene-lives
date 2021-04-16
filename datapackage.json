@@ -1,9 +1,9 @@
 {
-  "name": "datapackage-boilerplate",
-  "title": "A Boilerplate Data Package",
+  "name": "the-scene-lives",
+  "title": "Supporting the demoscene, one Data Package at a time",
   "format": "csv",
   "datapackage_version": "1.0.0",
-  "last_modified": "2018-01-01",
+  "last_modified": "2021-04-16",
   "licenses": [{
     "name": "ODC-PDDL-1.0",
     "path": "http://opendatacommons.org/licenses/pddl/",
@@ -11,22 +11,123 @@
   }],
   "sources": [
     {
-      "name": "Sample Data Source",
-      "web": "http://www..."
+      "name": "Demozoo",
+      "web": "http://demozoo.org/"
     }
   ],
   "resources": [
     {
-      "path": "data/some-good-data.csv",
+      "name": "productions",
+      "path": "data/productions_production.100.csv",
+      "profile": "tabular-data-resource",
       "schema": {
-        "fields": []
+        "fields": [
+          {
+            "name": "id",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "notes",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "release_date_date",
+            "type": "date",
+            "format": "YYYY-MM-DD"
+          },
+          {
+            "name": "release_date_precision",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "created_at",
+            "type": "datetime",
+            "format": "default"
+          },
+          {
+            "name": "updated_at",
+            "type": "datetime",
+            "format": "default"
+          },
+          {
+            "name": "supertype",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "has_bonafide_edits",
+            "type": "boolean",
+            "format": "default"
+          },
+          {
+            "name": "demozoo0_id",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "data_source",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "scene_org_id",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "unparsed_byline",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "include_notes_in_search",
+            "type": "boolean",
+            "format": "default"
+          },
+          {
+            "name": "sortable_title",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "has_screenshot",
+            "type": "boolean",
+            "format": "default"
+          },
+          {
+            "name": "search_document",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "search_title",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "locked",
+            "type": "boolean",
+            "format": "default"
+          },
+          {
+            "name": "hide_from_search_engines",
+            "type": "boolean",
+            "format": "default"
+          }
+        ]
       }
-    },{
-      "path": "data/the-raw-data.xls"
     }
   ],
   "maintainers":[{
-    "name": "School of Data CH",
-    "web": "https://www.schoolofdata.ch/"
+    "name": "Echtzeit - Digitale Kultur",
+    "web": "https://echtzeitkultur.org/"
   }]
 }

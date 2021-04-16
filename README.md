@@ -1,10 +1,26 @@
-This is a boilerplate [Data Package](https://frictionlessdata.io/data-packages/) in the form of a [GitHub Template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template#about-repository-templates).
+This is an open dataset of [demoscene](https://en.wikipedia.org/wiki/Demoscene) productions, which could be filtered to individual countries, themes, or platforms, which could be of interest from an art-history perspective to complement our [UNESCO digital heritage](http://demoscene-the-art-of-coding.net/) application - or just be used to introduce people to the history of the 'scene.
 
-> *Instructions: download, extract and modify this repository on your computer, then create a new repository and upload your work. Start by editing the `README.md` file, changing this text to a short summary of what this data set is about. If this sounds difficult, you should also consider using [data desktop](http://datahub.io/download) as a starting point.*
+The format of this repository is a [Data Package](https://frictionlessdata.io/data-packages/) aimed at making the demoscene more accessible to people who may have never heard about it (:wave: hello [#GLAMhack](https://glam.opendata.ch)!)
+
+:construction: Under construction :construction:
+
+See https://hack.glam.opendata.ch/project/114
 
 # Data
 
 > *Instructions: Accessible data files (ideally in simple data formats such as [CSV](https://frictionlessdata.io/guides/csv/), [JSON](http://json-schema.org/specification.html) and [GeoJSON](http://geojson.org/)), as well as the raw data, are placed in the `data` folder. In this section you should mention the files and formats included. It is good to suggest purposes for this data, such as example applications or use cases. Include any relevant background, contact points, and links that may help people to use this data. You can find examples of this at [datahub.io](https://datahub.io) or [github.com/datasets](https://github.com/datasets), and further tips at [frictionlessdata.io](https://frictionlessdata.io/guides/data-package/) and [datahub.io](https://datahub.io/docs/data-packages/publish-faq)*.
+
+An initial excerpt made out of Demozoo data has been added to the `data` folder. It was produced by importing the latest demozoo archival dump into a local PostgreSQL database, like this:
+
+```
+docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=sceners -e POSTGRES_USER=admin -e POSTGRES_DB=demozoo -d postgres:alpine
+gunzip -c demozoo-export.sql.gz | psql -h localhost -p 5432 -U admin demozoo
+# Enter the password when prompted: sceners
+```
+
+There are lots of utilities for converting Postgres tables to CSV. I used [db-to-sqlite](https://github.com/simonw/db-to-sqlite) to first create a SQLite database, poke around the data model, and export the tables.
+
+Then I used the Frictionless Data [create tool](https://create.frictionlessdata.io/) to generate the `datapackage.json`. Geting it to validate and preview still needs more work.
 
 # Preparation
 

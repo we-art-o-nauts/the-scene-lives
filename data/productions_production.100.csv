@@ -1,0 +1,100 @@
+id,title,notes,release_date_date,release_date_precision,created_at,updated_at,supertype,has_bonafide_edits,demozoo0_id,data_source,scene_org_id,unparsed_byline,include_notes_in_search,sortable_title,has_screenshot,search_document,search_title,locked,hide_from_search_engines
+1,Rob Is Jarig,"Originally written as a 19th birthday gift for Rob of <a href=""/groups/1/"">Aardbei</a>, *Rob Is Jarig* has become a running joke in the demoscene and the only tolerated exception to the ""new releases only"" rule at demo competitions.
+
+Frequently submitted under fake names and credited to a ""random Dutch scener"", its appearance in compos is traditionally accompanied by a small crowd of drunk sceners dancing on stage to its infectious melody.",2000-03-01,m,2010-10-05T22:14:05.551636+00:00,2018-08-08T18:58:50.527980+00:00,production,1,,,,,1,rob is jarig,1,,rob is jarig,0,0
+2,State of the Art,,1992-12-29,d,2010-10-05T22:14:05.551636+00:00,2018-05-01T06:23:55.100223+00:00,production,1,7494,,,,1,state of the art,1,,state of the art,0,0
+3,Haujobb BBQ 2010,,2010-06-04,d,2010-10-05T22:14:05.551636+00:00,2014-03-23T11:36:02.785831+00:00,production,1,,,,,1,haujobb bbq 000002010,1,,haujobb bbq 2010,0,0
+4,Ocean Machine,,2005-03-29,d,2010-10-05T22:14:05.551636+00:00,2017-03-24T07:48:14.515019+00:00,production,1,,,,,1,ocean machine,1,,ocean machine,0,0
+5,Bombman,,2006-08-05,d,2010-10-05T22:14:05.551636+00:00,2017-07-16T19:12:10.503216+00:00,production,1,32171,,,,1,bombman,1,,bombman,0,0
+6,The Gathering 1993 Invitation,"The intro requires almost all of chipmem on a 512k chip machine, and 300k of some other ram. It therefore needs at least 1mb total mem.
+
+Features the logos <a href=""http://demozoo.org/graphics/134930/"">Crusaders</a> and <a href=""http://demozoo.org/graphics/134931/"">The Gathering</a>.",1993-03-05,d,2010-10-05T22:14:05.551636+00:00,2015-03-15T14:40:28.028878+00:00,production,1,,,,,1,gathering 000001993 invitation the,1,,the gathering 1993 invitation,0,0
+7,Ethos,,2010-06-19,d,2010-10-05T22:14:05.551636+00:00,2016-03-09T05:45:19.441671+00:00,production,1,,,,,1,ethos,0,,ethos,0,0
+8,Silkcut,,2004-04-12,d,2010-10-05T22:14:05.551636+00:00,2017-03-24T07:49:30.541151+00:00,production,1,,,,,1,silkcut,1,,silkcut,0,0
+9,Babenoise,"Babenoise was the first ever 4k intro to incorporate sound, even if it was just feeding the image data to the sound output.",1995-04-15,d,2010-10-05T22:14:05.551636+00:00,2014-01-03T14:53:01.250674+00:00,production,1,,,,,1,babenoise,1,,babenoise,0,0
+10,Victrip,,2010-07-14,d,2010-10-05T22:14:05.551636+00:00,2015-06-23T06:52:26.682748+00:00,production,1,,,,,1,victrip,0,,victrip,0,0
+11,Astral Blur,"The demo was originally released for MS-DOS, and then the ports came later. The original requirements were a 486 with FPU, supporting VBE 2.0 for graphics output.
+
+Wox is mentioned in the demo itself and the file_id.diz, but not in the accompanying text file.
+
+The three fullscreen pictures included are <a href=""http://demozoo.org/graphics/18556/"">All Over</a> by Louie (22nd in The Party 1996 graphics competition), <a href=""http://demozoo.org/graphics/19115/"">Angelic Particles</a> by Louie and Rodney (winner of the Gathering 1997 graphics competition) and <a href=""http://demozoo.org/graphics/18560/"">Bodtwijf</a> by Lowlife (26th in The Party 1996 graphics competition).
+
+Voted #1 most popular Dutch demo in [Fleur 3](https://demozoo.org/productions/104398/) (may 1999).",1997-03-30,d,2010-10-05T22:14:05.551636+00:00,2018-04-28T09:29:30.913438+00:00,production,1,,,,,1,astral blur,1,,astral blur,0,0
+12,Jizz,Voted #4 most popular 64k intro and #2 most popular Dutch intro in [Fleur 3](https://demozoo.org/productions/104398/) (may 1999).,1997-07-19,d,2010-10-05T22:14:05.551636+00:00,2019-07-13T08:44:39.689439+00:00,production,1,7398,,,,1,jizz,1,,jizz,0,0
+13,Stash,Voted #1 most popular 64k intro and #1 most popular dutch intro in [Fleur 3](https://demozoo.org/productions/104398/) (may 1999).,1997-12-29,d,2010-10-05T22:14:05.551636+00:00,2019-07-13T13:31:50.055139+00:00,production,1,7399,,,,1,stash,1,,stash,0,0
+14,Assembly 98 Invitation,,1998-07-29,d,2010-10-05T22:14:05.551636+00:00,2016-01-29T07:01:39.783026+00:00,production,1,,,,,1,assembly 000000098 invitation,1,,assembly 98 invitation,0,0
+15,Heaven Seven,"aka ""Heaven 7""
+
+A high-res version and making-of info is available from the linked H7 mini site.",2000-04-24,d,2010-10-05T22:14:05.551636+00:00,2020-03-06T11:39:55.034291+00:00,production,1,7401,,,,1,heaven seven,1,,heaven seven,0,0
+16,Zelig,,2000-03-25,d,2010-10-05T22:14:05.551636+00:00,2014-01-02T20:24:40.356709+00:00,production,1,,,,,1,zelig,1,,zelig,0,0
+17,Froggy Inside,Released at Very Important Party Party 2000.,1999-12-29,d,2010-10-05T22:14:05.551636+00:00,2017-05-15T19:03:51.196581+00:00,production,1,,,,,1,froggy inside,0,,froggy inside,0,0
+18,Freestyle,"Released at DKS 1999.
+
+Requires DirectX 7.0.",2000-01-29,d,2010-10-05T22:14:05.551636+00:00,2020-03-01T20:39:02.552311+00:00,production,1,,,,,1,freestyle,1,,freestyle,0,0
+19,Some Bookprint And A Broken Heart,,2000-04-23,d,2010-10-05T22:14:05.551636+00:00,2014-12-17T18:28:10.939281+00:00,production,1,,,,,1,some bookprint and a broken heart,1,,some bookprint and a broken heart,0,0
+20,VIP 2,"The music is ripped from American metal band <a href=""http://en.wikipedia.org/wiki/Fear_Factory"">Fear Factory</a>, which spawned some controversy in the demoscene. The track is called Resurrection and can be found on their album <a href=""http://www.discogs.com/Fear-Factory-Obsolete/master/28620"">Obsolete</a>.",2000-06-17,d,2010-10-05T22:14:05.551636+00:00,2017-01-05T10:11:54.078780+00:00,production,1,,,,,1,vip 000000002,1,,vip 2,0,0
+21,Moralhardcandy,,1999-07-23,d,2010-10-05T22:14:05.551636+00:00,2019-07-13T11:12:25.732334+00:00,production,1,,,,,1,moralhardcandy,1,,moralhardcandy,0,0
+22,Strung Out,Menelya's nick was misspellt in the accompanying nfo file.,2010-07-18,d,2010-10-05T22:14:05.551636+00:00,2011-07-21T07:32:17.422357+00:00,production,1,,,,,1,strung out,0,,strung out,0,0
+23,Sim Reich,,2010-07-18,d,2010-10-05T22:14:05.551636+00:00,2017-07-20T01:04:43.434105+00:00,production,1,,,,,1,sim reich,1,,sim reich,0,0
+24,Chips Don't Lie,Released to the public a few days after the party.,2010-07-21,d,2010-10-05T22:14:05.551636+00:00,2014-01-31T14:23:44.605774+00:00,production,1,,,,,1,chips don t lie,1,,chips don t lie,0,0
+25,Trask,,2010-07-18,d,2010-10-05T22:14:05.551636+00:00,2012-08-07T06:32:37.581801+00:00,production,1,,,,,1,trask,0,,trask,0,0
+26,Bjoer / Bjoer7000,"Bjoer is the original name of the intro. Bjoer 7000 refers to the Windows port released in June 2000 (add 5000 TPOLM years).
+
+Voted #8 most popular 64k intro in [Fleur 3](https://demozoo.org/productions/104398/) (may 1999).",1997-12-29,d,2010-10-05T22:14:05.551636+00:00,2018-04-28T08:24:44.419283+00:00,production,1,7408,,,,1,bjoer bjoer000007000,1,,bjoer bjoer7000,0,0
+27,Squeezed,DirectX 3 or above is required.,1998-04-12,d,2010-10-05T22:14:05.551636+00:00,2017-04-16T10:50:52.698999+00:00,production,1,,,,,1,squeezed,1,,squeezed,0,0
+28,Vandalism News #52,Contains a party report from [Silesia 3](https://demozoo.org/parties/159/).,2009-10-31,d,2010-10-05T22:14:05.551636+00:00,2018-07-24T05:45:26.098210+00:00,production,1,,,,,1,vandalism news 000000052,1,,vandalism news 52,0,0
+29,Krypton,,2000-06-01,m,2010-10-05T22:14:05.551636+00:00,2012-08-03T14:45:44.225843+00:00,production,1,,,,,1,krypton,0,,krypton,0,0
+30,Twitching Flannels,,1999-08-01,d,2010-10-05T22:14:05.551636+00:00,2020-06-12T06:43:41.026694+00:00,production,1,,,,,1,twitching flannels,1,,twitching flannels,0,0
+31,Do Zen,"Requires Microsoft's deprecated Java Virtual Machine (msjavx86.exe) to run.
+
+A <a href=""http://www.pouet.net/prod.php?which=7992"">.NET port</a> appeared in 2002.",1999-08-07,d,2010-10-05T22:14:05.551636+00:00,2015-11-24T21:37:10.061381+00:00,production,1,,,,,1,do zen,1,,do zen,0,0
+32,Lacuna,,2010-07-18,d,2010-10-05T22:14:05.551636+00:00,2011-01-28T14:21:27.326043+00:00,production,1,,,,,1,lacuna,0,,lacuna,0,0
+33,Goatage,Software rendered. Uses FMOD for music output. Tested and working under Windows 7.,1999-06-12,d,2010-10-05T22:14:05.551636+00:00,2015-03-28T10:13:02.414630+00:00,production,1,,,,,1,goatage,0,,goatage,0,0
+34,Plume,,1997-08-17,d,2010-10-05T22:14:05.551636+00:00,2017-04-10T21:49:35.697275+00:00,production,1,7414,,,,1,plume,1,,plume,0,0
+35,Toypusher,Tested and working under current versions of Windows. Minor timing bugs (esp. in the final part) might occur.,1999-07-23,d,2010-10-05T22:14:05.551636+00:00,2017-04-09T10:02:23.287513+00:00,production,1,,,,,1,toypusher,1,,toypusher,0,0
+36,The Wind Under My Wings,"The music features vocals by <a href=""http://www.myspace.com/valeriablonde"">Valeria Blonde</a> (<a href=""http://twitter.com/valeriablonde"">twitter</a>), who is not credited directly on account of not being a scener.",2010-07-24,d,2010-10-05T22:14:05.551636+00:00,2014-03-30T09:40:43.566082+00:00,production,1,,,,,1,wind under my wings the,1,,the wind under my wings,0,0
+37,Starbuilders,Only guaranteed to work fine on Nvidia GPU's.,2010-07-25,d,2010-10-05T22:14:05.551636+00:00,2015-03-11T22:11:03.948291+00:00,production,1,,,,,1,starbuilders,1,,starbuilders,0,0
+38,Kkrunchy,"A small executable packer, meant to be used for 64k intros.",2006-08-24,d,2010-10-05T22:14:05.551636+00:00,2017-05-23T08:37:51.915078+00:00,production,1,,,,,1,kkrunchy,1,,kkrunchy,0,0
+39,Plastik,Voted #5 in demo of the year 1998 in [Fleur 3](https://demozoo.org/productions/104398/) (may 1999).,1998-07-24,d,2010-10-05T22:14:05.551636+00:00,2020-07-16T12:47:30.248236+00:00,production,1,,,,,1,plastik,1,,plastik,0,0
+40,Captured Dreams,"Features the fullscreen picture <a href=""http://demozoo.org/graphics/19115/"">Angelic Particles</a> by Danny and Louie, winner of the graphics competition at the same party. Fndr appears as a guest artist.
+
+The demo requires at least 4MB fast memory and a 030-50 processor. However, the system checker searches for 020+, so in theory it is possible to run on lower specced hardware.",1997-03-30,d,2010-10-05T22:14:05.551636+00:00,2021-04-08T12:38:36.881471+00:00,production,1,7417,,,,1,captured dreams,1,,captured dreams,0,0
+41,Zine 12 Headlines,,2007-07-26,d,2010-10-05T22:14:05.551636+00:00,2017-07-16T18:46:39.295646+00:00,production,1,37580,,,,1,zine 000000012 headlines,1,,zine 12 headlines,0,0
+42,Zine 12,"Features an interview with CG scientist <a href=""http://en.wikipedia.org/wiki/Paul_Debevec"">Paul Debevec</a>.",2007-08-18,d,2010-10-05T22:14:05.551636+00:00,2014-02-08T02:23:02.920302+00:00,production,1,37978,,,,1,zine 000000012,1,,zine 12,0,0
+43,Moaï,"Windows version needs Direct X 3 or later. Uses the MIDAS sound system for output.
+
+Voted #13 in demo of the year 1998 in [Fleur 3](https://demozoo.org/productions/104398/) (may 1999).",1998-12-29,d,2010-10-05T22:14:05.551636+00:00,2018-04-28T09:20:52.120047+00:00,production,1,,,,,1,moai,1,,moai,0,0
+44,Past,Requires DirectX 3 or later. Uses the MIDAS sound system.,1999-01-01,y,2010-10-05T22:14:05.551636+00:00,2016-04-09T14:20:02.061641+00:00,production,1,,,,,1,past,0,,past,0,0
+45,No Exit,,1999-06-01,m,2010-10-05T22:14:05.551636+00:00,2017-04-16T11:08:52.764640+00:00,production,1,,,,,1,no exit,1,,no exit,0,0
+46,State of Mind,"The demo comes with executables for three platforms; DOS, Windows (DirectX) and Linux. It features the track 'States of Mind' from the album <a href=""http://www.discogs.com/Senser-Stacked-Up/master/21425"">Stacked Up</a> by <a href=""http://www.discogs.com/artist/35156-Senser"">Senser</a>.
+
+Voted #1 most popular demo and #1 demo of the year 1998 in [Fleur 3](https://demozoo.org/productions/104398/) (may 1999).",1998-12-29,d,2010-10-05T22:14:05.551636+00:00,2021-04-08T15:36:33.027617+00:00,production,1,,,,,1,state of mind,1,,state of mind,0,0
+47,Cosmowave Trailer,,2000-07-20,d,2010-10-05T22:14:05.551636+00:00,2018-02-14T20:56:11.950049+00:00,production,1,7422,,,,1,cosmowave trailer,1,,cosmowave trailer,0,0
+48,Experimental,,2000-04-15,d,2010-10-05T22:14:05.551636+00:00,2020-05-13T17:50:49.183855+00:00,production,1,,,,,1,experimental,1,,experimental,0,0
+49,Wonder,"Requires OpenGL, a TNT class card, and at least a P2-300 or equivalent cpu.",1999-09-04,d,2010-10-05T22:14:05.551636+00:00,2021-03-09T19:22:25.388707+00:00,production,1,7424,,,,1,wonder,1,,wonder,0,0
+50,Dream,Uses the MINFMOD system for sound output.,2000-07-15,d,2010-10-05T22:14:05.551636+00:00,2013-01-24T17:01:43.072908+00:00,production,1,,,,,1,dream,0,,dream,0,0
+51,Contour,,1999-06-05,d,2010-10-05T22:14:05.551636+00:00,2016-03-08T20:34:28.124802+00:00,production,1,7426,,,,1,contour,1,,contour,0,0
+52,Guggle Me,,1996-09-28,d,2010-10-05T22:14:05.551636+00:00,2016-03-09T05:50:45.120114+00:00,production,1,,,,,1,guggle me,1,,guggle me,0,0
+53,Tesla,,2000-07-20,d,2010-10-05T22:14:05.551636+00:00,2021-03-28T20:43:15.151620+00:00,production,1,7428,,,,1,tesla,1,,tesla,0,0
+54,Wonders Never Cease,Uses BASS for sound output. Requires DirectX 5 or newer. Pure software rendering.,2000-07-01,d,2010-10-05T22:14:05.551636+00:00,2018-02-14T19:08:24.096592+00:00,production,1,7429,,,,1,wonders never cease,0,,wonders never cease,0,0
+55,Christmas Chips,Released outside any party.,1999-12-18,d,2010-10-05T22:14:05.551636+00:00,2019-02-06T10:28:18.077663+00:00,production,1,,,,,1,christmas chips,0,,christmas chips,0,0
+56,Cracktro,Uses MINFMOD for sound output.,2000-06-26,d,2010-10-05T22:14:05.551636+00:00,2018-01-06T18:33:51.506714+00:00,production,1,,,,,1,cracktro,1,,cracktro,0,0
+57,Dope,,1995-04-15,d,2010-10-05T22:14:05.551636+00:00,2019-08-17T16:49:36.715124+00:00,production,1,,,,,1,dope,1,,dope,0,0
+58,Bubbles In My Beer,,1999-12-05,d,2010-10-05T22:14:05.551636+00:00,2018-10-17T20:50:54.300456+00:00,production,1,,,,,1,bubbles in my beer,1,,bubbles in my beer,0,0
+59,Year 2k-1,,1999-01-01,d,2010-10-05T22:14:05.551636+00:00,2016-06-20T20:24:35.982992+00:00,production,1,,,,,1,year 000000002k 000000001,1,,year 2k 1,0,0
+60,Rupture,,2009-04-11,d,2010-10-05T22:14:05.551636+00:00,2014-02-03T13:26:29.770366+00:00,production,1,,,,,1,rupture,1,,rupture,0,0
+61,Only One Wish,,2008-07-02,d,2010-10-05T22:14:05.551636+00:00,2019-08-21T08:45:10.147851+00:00,production,1,,,,,1,only one wish,1,,only one wish,0,0
+62,303,Voted #5 most popular demo and #2 most popular Dutch demo in [Fleur 3](https://demozoo.org/productions/104398/) (may 1999).,1997-04-05,d,2010-10-05T22:14:05.551636+00:00,2019-07-13T13:21:24.908383+00:00,production,1,7439,,,,1,000000303,1,,303,0,0
+63,Nothing New,,1999-08-28,d,2010-10-05T22:14:05.551636+00:00,2020-09-05T12:56:03.318545+00:00,production,1,,,,,1,nothing new,1,,nothing new,0,0
+64,Nightfall,Requires DirectX 6 or later.,1999-08-28,d,2010-10-05T22:14:05.551636+00:00,2012-10-25T19:33:49.938931+00:00,production,1,7444,,,,1,nightfall,0,,nightfall,0,0
+65,This is,"Danube was the only person working on the demo who was not a full member, dubbed a ""guest star"" in the nfo.
+
+Goof: 16:9/10 resolutions will break the fake letter-boxing that is only working in 4:3. ",2000-06-17,d,2010-10-05T22:14:05.551636+00:00,2019-07-13T10:33:09.169502+00:00,production,1,7446,,,,1,this is,1,,this is,0,0
+66,Shad 2,Requires DirectX 6 or later. Was controversial over using copyrighted music by Coptic Rain.,1999-04-17,d,2010-10-05T22:14:05.551636+00:00,2017-05-04T10:03:05.242621+00:00,production,1,7447,,,,1,shad 000000002,1,,shad 2,0,0
+67,Together,Tested and working under Windows 7 (32bit).,2000-07-21,d,2010-10-05T22:14:05.551636+00:00,2018-03-30T20:05:35.223882+00:00,production,1,7451,,,,1,together,0,,together,0,0
+68,74293945,"~250 KByte ""dentro"".",2000-07-01,m,2010-10-05T22:14:05.551636+00:00,2016-03-08T19:29:58.205608+00:00,production,1,,,,,1,074293945,1,,74293945,0,0
+69,Happiness Is Around The Bend,,2010-08-07,d,2010-10-05T22:14:05.551636+00:00,2019-10-17T07:37:48.771831+00:00,production,1,,,,,1,happiness is around the bend,1,,happiness is around the bend,0,0
+70,Ceasefire (All Falls Down...),,2010-08-07,d,2010-10-05T22:14:05.551636+00:00,2016-03-08T20:29:27.036194+00:00,production,1,,,,,1,ceasefire all falls down,1,,ceasefire all falls down,0,0
+71,Devolution,"The original release version is NVidia-only, the ""ATI fix"" is more compatible and works on Intel chips as well.",2010-08-08,d,2010-10-05T22:14:05.551636+00:00,2017-05-14T06:36:32.318923+00:00,production,1,,,,,1,devolution,1,,devolution,0,0
+72,Freon,"Requires DirectX 9 or later, and at least shader model 3.0.",2010-08-08,d,2010-10-05T22:14:05.551636+00:00,2014-08-03T18:17:21.105331+00:00,production,1,,,,,1,freon,0,,freon,0,0
+73,X Marks The Spot,Requires Shader Model 3.0.,2010-08-07,d,2010-10-05T22:14:05.551636+00:00,2017-03-25T17:29:37.738161+00:00,production,1,,,,,1,x marks the spot,1,,x marks the spot,0,0
