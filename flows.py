@@ -35,7 +35,7 @@ def aggregate_productions(package):
         dict(name="production_subtype", type="string")
     )
     package.pkg.descriptor["resources"][0]["schema"]["fields"].append(
-        dict(name="platform", type="string")
+        dict(name="platform_name", type="string")
     )
     # Must yield the modified datapackage
     yield package.pkg
@@ -48,12 +48,19 @@ def aggregate_productions(package):
         row["production_type"] = ""
         if 'productiontype_id' in row and row['productiontype_id']:
             ptid = int(row['productiontype_id'])
-            ptype = production_type[ptid]
-            row["production_type"] = ptype['top'] or ptype['name']
-            row["production_subtype"] = ptype['name'] or ""
-        row["platform"] = ""
+            if ptid in production_type:
+                ptype = production_type[ptid]
+                row["production_type"] = ptype['top'] or ptype['name']
+                row["production_subtype"] = ptype['name'] or ""
+            else:
+                print("Warning: production type not found - data out of sync?")
+        row["platform_name"] = ""
         if 'platform_id' in row and row['platform_id']:
-            row["platform"] = platform_name[int(row['platform_id'])]
+            pfid = int(row['platform_id'])
+            if pfid in platform_name:
+                row["platform_name"] = platform_name[pfid]
+            else:
+                print("Warning: platform type %d not found" % pfid)
         return row
 
     yield map(f, productions)
@@ -66,7 +73,9 @@ def productions_csv():
             name='productiontypes'),
         load('data/demozoo/productions_production_platforms.csv', format='csv',
             name='productionplatforms'),
-        load('data/demozoo/productions_production.100.csv', format='csv',
+        load('data/demozoo/productions_screenshot.csv', format='csv',
+            name='screenshot'),
+        load('data/demozoo/productions_production.csv', format='csv',
             name='production'),
 
         # Save a checkpoint to avoid re-downloading
@@ -88,21 +97,20 @@ def productions_csv():
             {'platform_id': { 'aggregate': 'first' }},
             mode="half-outer",  # "null" values at the Source
         ),
+        join(
+            "screenshot",       # Source resource
+            ["id"],
+            "production",       # Target resource
+            ["id"],
+            {
+                'standard_url': { 'aggregate': 'first' },
+                'thumbnail_url': { 'aggregate': 'first' }
+            },
+            mode="half-outer",  # "null" values at the Source
+        ),
 
         # Process to aggregate
         aggregate_productions,
-
-        load('data/demozoo/productions_screenshot.csv', format='csv',
-            name='screenshot'),
-
-        join(
-            "production",       # Target resource
-            ["id"],
-            "screenshot",       # Source resource
-            ["id"],
-            {'*': { 'aggregate': 'first' }},
-            mode="half-outer",  # "null" values at the Source
-        ),
 
         # Save the results
         add_metadata(name='productions', title='''Productions'''),

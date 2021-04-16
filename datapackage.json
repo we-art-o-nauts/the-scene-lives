@@ -123,6 +123,41 @@
             "name": "hide_from_search_engines",
             "type": "boolean",
             "format": "default"
+          },
+          {
+            "name": "productiontype_id",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "platform_id",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "thumbnail_url",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "standard_url",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "production_type",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "production_subtype",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "platform_name",
+            "type": "string",
+            "format": "default"
           }
         ]
       }
