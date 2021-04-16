@@ -20,7 +20,7 @@
     {
       "name": "productions",
       "title": "Productions",
-      "path": "data/productions_production.100.csv",
+      "path": "data/productions.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [

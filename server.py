@@ -2,7 +2,7 @@ import falcon
 from wsgiref.simple_server import make_server
 from pandas_datapackage_reader import read_datapackage
 
-api = falcon.API()
+app = falcon.API()
 
 data = read_datapackage(".")
 
@@ -34,10 +34,9 @@ class ProductionsResource:
         resp.body = get_paginated_json(req, df)
 
 print("Deploying: productions")
-api.add_route('/productions', ProductionsResource(data))
-
+app.add_route('/productions', ProductionsResource(data))
 
 if __name__ == '__main__':
-    with make_server('', 8000, api) as httpd:
+    with make_server('', 8000, app) as httpd:
         print('Serving on port 8000...')
         httpd.serve_forever()
