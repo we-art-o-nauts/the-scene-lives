@@ -42,7 +42,7 @@
           {
             "name": "release_date_date",
             "type": "date",
-            "format": "YYYY-MM-DD"
+            "format": "%Y-%m-%d"
           },
           {
             "name": "release_date_precision",
@@ -52,12 +52,12 @@
           {
             "name": "created_at",
             "type": "datetime",
-            "format": "any"
+            "format": "%Y-%m-%dT%H:%M:%S.%f"
           },
           {
             "name": "updated_at",
             "type": "datetime",
-            "format": "any"
+            "format": "%Y-%m-%dT%H:%M:%S.%f"
           },
           {
             "name": "supertype",
