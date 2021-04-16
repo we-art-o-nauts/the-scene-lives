@@ -33,7 +33,6 @@ Then we used the Frictionless Data [create tool](https://create.frictionlessdata
 This repository contains a minimalist backend service API based on the [Falcon](http://falconframework.org/) framework and [Pandas DataPackage Reader](https://github.com/rgieseke/pandas-datapackage-reader). To run:
 
 ```
-cd api
 virtualenv env                   # .. or use pipenv
 . env/bin/activate               # == pipenv shell
 pip install -Ur requirements.txt # == pipenv install
