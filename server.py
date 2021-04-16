@@ -4,7 +4,7 @@ from pandas_datapackage_reader import read_datapackage
 
 api = falcon.API()
 
-data = read_datapackage("..")
+data = read_datapackage(".")
 
 def get_paginated_json(req, df):
     per_page = req.get_param_as_int('per_page', default=10, required=False)
