@@ -62,15 +62,19 @@ def aggregate_productions(package):
                 row["production_type"] = ptype['top'] or ptype['name']
                 row["production_subtype"] = ptype['name'] or ""
             else:
-                print("Warning: production type missing on %d - data out of sync?" % id)
+                # print("Warning: production type missing on %d - data out of sync?" % id)
+                pass
         if 'platform_id' in row and row['platform_id']:
             pfid = int(row['platform_id'])
             if pfid in platform_name:
                 row["platform_name"] = platform_name[pfid]
             else:
-                print("Warning: platform type %s not found on %d" % (str(pfid), id))
+                # print("Warning: platform type %s not found on %d" % (str(pfid), id))
+                pass
         if 'supertype' in row and row['supertype']:
-            row["uri"] = "https://demozoo.org/%s/%d/" % (row['supertype'], id)
+            supertype = row['supertype']
+            if supertype == 'production': supertype += 's' # :_) ...
+            row["uri"] = "https://demozoo.org/%s/%d/" % (supertype, id)
         return row
 
     yield map(f, productions)
