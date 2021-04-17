@@ -37,6 +37,9 @@ class ProductionsResource:
                 ascending=('reverse' not in req.params)
             )
 
+        if 'random' in req.params:
+            df = df.sample()
+
         resp.status = falcon.HTTP_200
         resp.body = get_paginated_json(req, df)
 
