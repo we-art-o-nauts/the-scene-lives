@@ -1,5 +1,8 @@
-from dataflows import Flow, load, dump_to_path, dump_to_zip, printer, add_metadata
-from dataflows import sort_rows, filter_rows, find_replace, delete_fields, set_type, validate, unpivot, join
+from dataflows import (
+    Flow, load, dump_to_path, dump_to_zip, printer, add_metadata,
+    sort_rows, filter_rows, find_replace, delete_fields,
+    select_fields, set_type, validate, unpivot, join
+)
 
 import json
 
@@ -29,7 +32,7 @@ with open('data/demozoo/production_type.json', 'r') as jsonfile:
 def aggregate_productions(package):
     # Add custom type fields to the schema
     package.pkg.descriptor["resources"][0]["schema"]["fields"].append(
-        dict(name="uri", type="uri")
+        dict(name="uri", type="string", format="uri")
     )
     package.pkg.descriptor["resources"][0]["schema"]["fields"].append(
         dict(name="production_type", type="string")
@@ -48,6 +51,7 @@ def aggregate_productions(package):
     productions = next(resources)
 
     def f(row):
+        id = int(row['id'])
         row["uri"] = ""
         row["platform_name"] = ""
         row["production_type"] = ""
@@ -58,15 +62,15 @@ def aggregate_productions(package):
                 row["production_type"] = ptype['top'] or ptype['name']
                 row["production_subtype"] = ptype['name'] or ""
             else:
-                print("Warning: production type not found - data out of sync?")
+                print("Warning: production type missing on %d - data out of sync?" % id)
         if 'platform_id' in row and row['platform_id']:
             pfid = int(row['platform_id'])
             if pfid in platform_name:
                 row["platform_name"] = platform_name[pfid]
             else:
-                print("Warning: platform type %d not found" % pfid)
+                print("Warning: platform type %s not found on %d" % (str(pfid), id))
         if 'supertype' in row and row['supertype']:
-            row["uri"] = "https://demozoo.org/%s/%d/" % (row['supertype'], row['id'])
+            row["uri"] = "https://demozoo.org/%s/%d/" % (row['supertype'], id)
         return row
 
     yield map(f, productions)
@@ -117,6 +121,19 @@ def productions_csv():
 
         # Process to aggregate
         aggregate_productions,
+
+        # Clear unused fields
+        select_fields([
+            'id', 'title', 'notes',
+            'release_date_date', 'release_date_precision',
+            'created_at', 'updated_at',
+            'supertype', 'data_source',
+            'scene_org_id',
+            'thumbnail_url', 'standard_url',
+            'production_type', 'production_subtype',
+            'platform_name',
+            'uri'
+        ]),
 
         # Save the results
         add_metadata(name='productions', title='''Productions'''),
