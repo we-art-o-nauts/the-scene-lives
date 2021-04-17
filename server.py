@@ -2,8 +2,6 @@ import falcon
 from wsgiref.simple_server import make_server
 from pandas_datapackage_reader import read_datapackage
 
-app = falcon.API(cors_enable=True)
-
 data = read_datapackage(".")
 
 def get_paginated_json(req, df):
@@ -33,7 +31,10 @@ class ProductionsResource:
         resp.status = falcon.HTTP_200
         resp.body = get_paginated_json(req, df)
 
-print("Deploying: productions")
+print("Deploying falcon brigade")
+
+app = falcon.API(middleware=falcon.CORSMiddleware(allow_origins='*', allow_credentials='*'))
+
 app.add_route('/productions', ProductionsResource(data))
 
 if __name__ == '__main__':
