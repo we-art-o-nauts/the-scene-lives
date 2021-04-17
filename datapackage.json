@@ -65,16 +65,6 @@
             "format": "default"
           },
           {
-            "name": "has_bonafide_edits",
-            "type": "boolean",
-            "format": "default"
-          },
-          {
-            "name": "demozoo0_id",
-            "type": "integer",
-            "format": "default"
-          },
-          {
             "name": "data_source",
             "type": "any",
             "format": "default"
@@ -82,56 +72,6 @@
           {
             "name": "scene_org_id",
             "type": "any",
-            "format": "default"
-          },
-          {
-            "name": "unparsed_byline",
-            "type": "any",
-            "format": "default"
-          },
-          {
-            "name": "include_notes_in_search",
-            "type": "boolean",
-            "format": "default"
-          },
-          {
-            "name": "sortable_title",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "has_screenshot",
-            "type": "boolean",
-            "format": "default"
-          },
-          {
-            "name": "search_document",
-            "type": "any",
-            "format": "default"
-          },
-          {
-            "name": "search_title",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "locked",
-            "type": "boolean",
-            "format": "default"
-          },
-          {
-            "name": "hide_from_search_engines",
-            "type": "boolean",
-            "format": "default"
-          },
-          {
-            "name": "productiontype_id",
-            "type": "integer",
-            "format": "default"
-          },
-          {
-            "name": "platform_id",
-            "type": "integer",
             "format": "default"
           },
           {

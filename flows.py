@@ -27,7 +27,10 @@ with open('data/demozoo/production_type.json', 'r') as jsonfile:
 
 
 def aggregate_productions(package):
-    # Add new type field to the schema
+    # Add custom type fields to the schema
+    package.pkg.descriptor["resources"][0]["schema"]["fields"].append(
+        dict(name="uri", type="uri")
+    )
     package.pkg.descriptor["resources"][0]["schema"]["fields"].append(
         dict(name="production_type", type="string")
     )
@@ -45,6 +48,8 @@ def aggregate_productions(package):
     productions = next(resources)
 
     def f(row):
+        row["uri"] = ""
+        row["platform_name"] = ""
         row["production_type"] = ""
         if 'productiontype_id' in row and row['productiontype_id']:
             ptid = int(row['productiontype_id'])
@@ -54,13 +59,14 @@ def aggregate_productions(package):
                 row["production_subtype"] = ptype['name'] or ""
             else:
                 print("Warning: production type not found - data out of sync?")
-        row["platform_name"] = ""
         if 'platform_id' in row and row['platform_id']:
             pfid = int(row['platform_id'])
             if pfid in platform_name:
                 row["platform_name"] = platform_name[pfid]
             else:
                 print("Warning: platform type %d not found" % pfid)
+        if 'supertype' in row and row['supertype']:
+            row["uri"] = "https://demozoo.org/%s/%d/" % (row['supertype'], row['id'])
         return row
 
     yield map(f, productions)

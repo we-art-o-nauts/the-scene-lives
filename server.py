@@ -2,7 +2,7 @@ import falcon
 from wsgiref.simple_server import make_server
 from pandas_datapackage_reader import read_datapackage
 
-app = falcon.API()
+app = falcon.API(cors_enable=True)
 
 data = read_datapackage(".")
 
