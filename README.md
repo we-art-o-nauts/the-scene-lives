@@ -43,9 +43,14 @@ At this point you should see the message "Serving on port..." Test the API using
 
 `http://localhost:8000/productions`
 
-You can provide a search string, or adjust the amount of output with a `page` and `per_page` parameter in your query.
+You can provide a (precise) search string by appending a parameter with the name of the field. Or put the field name into the `sort` parameter to change the order (optionally add `reverse`). Adjust the amount of output with a `page` and `per_page` parameter in your query.
 
+For example, to show the latest Commodore 64 productions:
+
+`http://localhost:8000/productions?platform_name=Commodore%2064&sort=release_date_date&reverse`
 
 # License
 
 This Data Package is made available by its maintainers under the [Public Domain Dedication and License v1.0](http://www.opendatacommons.org/licenses/pddl/1.0/), a copy of the full text of which is in [LICENSE.md](LICENSE.md).
+
+Any code contained here is released under [WTFPL](https://en.wikipedia.org/wiki/WTFPL).

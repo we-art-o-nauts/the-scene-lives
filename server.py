@@ -14,6 +14,7 @@ class ProductionsResource:
 
     def __init__(self, data):
         self.productions = data
+        # print(self.productions._metadata['schema']['fields'])
 
     def on_get(self, req, resp):
         df = self.productions.copy()
@@ -23,10 +24,18 @@ class ProductionsResource:
             if q is not None:
                 try:
                     q = q.strip()
-                    q = int(q)
-                    df = df.loc[df[fn] == q]
+                    if fld['type'] == 'integer':
+                        q = int(q)
+                    df = df.loc[lambda df: df[fn] == q]
+                    print("Filtered for %s = " % fn, q)
                 except:
                     pass
+
+        if 'sort' in req.params:
+            df = df.sort_values(
+                by=[req.get_param('sort')],
+                ascending=('reverse' not in req.params)
+            )
 
         resp.status = falcon.HTTP_200
         resp.body = get_paginated_json(req, df)
