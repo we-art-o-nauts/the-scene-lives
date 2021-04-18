@@ -1,10 +1,16 @@
+#!/usr/bin/env python
+
 from dataflows import (
-    Flow, load, dump_to_path, dump_to_zip, printer, add_metadata,
+    Flow, load, dump_to_path, dump_to_zip, printer,
+    update_resource, add_metadata,
     sort_rows, filter_rows, find_replace, delete_fields,
     select_fields, set_type, validate, unpivot, join
 )
 
-import json
+import json, os
+
+FASTMODE = '.100' if os.getenv('FASTMODE', False) else ''
+print("Speedy Susie mode!" if FASTMODE else 'Full process mode.')
 
 with open('data/demozoo/platform.json', 'r') as jsonfile:
     jsondata = json.load(jsonfile)
@@ -87,9 +93,9 @@ def productions_csv():
             name='productiontypes'),
         load('data/demozoo/productions_production_platforms.csv', format='csv',
             name='productionplatforms'),
-        load('data/demozoo/productions_screenshot.csv', format='csv',
+        load('data/demozoo/productions_screenshot%s.csv' % FASTMODE, format='csv',
             name='screenshot'),
-        load('data/demozoo/productions_production.csv', format='csv',
+        load('data/demozoo/productions_production%s.csv' % FASTMODE, format='csv',
             name='production'),
 
         # Save a checkpoint to avoid re-downloading
@@ -113,7 +119,7 @@ def productions_csv():
         ),
         join(
             "screenshot",       # Source resource
-            ["id"],
+            ["production_id"],
             "production",       # Target resource
             ["id"],
             {
@@ -140,9 +146,10 @@ def productions_csv():
         ]),
 
         # Save the results
+        update_resource('production', name='productions'),
         add_metadata(name='productions', title='''Productions'''),
         # printer(),
-        dump_to_path('data/output'),
+        dump_to_path('data'),
     )
     flow.process()
 
