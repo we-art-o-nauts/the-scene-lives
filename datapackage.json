@@ -21,7 +21,18 @@
       "name": "productions",
       "title": "Productions",
       "path": "data/productions.csv",
+      "encoding": "utf-8",
+      "format": "csv",
       "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": ",",
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "header": true,
+        "caseSensitiveHeader": false,
+        "skipInitialSpace": false,
+        "doubleQuote": true
+      },
       "schema": {
         "fields": [
           {
