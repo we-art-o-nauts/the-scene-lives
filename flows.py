@@ -146,7 +146,7 @@ def productions_csv():
         ]),
 
         # Save the results
-        update_resource('production', name='productions'),
+        update_resource('productions', name='production'),
         add_metadata(name='productions', title='''Productions'''),
         # printer(),
         dump_to_path('data'),

@@ -1,7 +1,10 @@
-import falcon
+import falcon, os
 from wsgiref.simple_server import make_server
 from pandas_datapackage_reader import read_datapackage
 
+PORT = os.getenv('PORT', 8000)
+
+print("Entering the matrix ...")
 data = read_datapackage(".")
 
 def get_paginated_json(req, df):
@@ -36,20 +39,25 @@ class ProductionsResource:
                 by=[req.get_param('sort')],
                 ascending=('reverse' not in req.params)
             )
-
-        if 'random' in req.params:
+        elif 'random' in req.params:
+            df = df.sample(frac=1).reset_index(drop=True)
+        elif 'lucky' in req.params:
             df = df.sample()
+        else:
+            df = df.sort_values(
+                by=['release_date_date'], ascending=False
+            )
 
         resp.status = falcon.HTTP_200
         resp.body = get_paginated_json(req, df)
 
-print("Deploying falcon brigade")
+print("Deploying falcon brigade ...")
 
 app = falcon.API(middleware=falcon.CORSMiddleware(allow_origins='*', allow_credentials='*'))
 
 app.add_route('/productions', ProductionsResource(data))
 
 if __name__ == '__main__':
-    with make_server('', 8000, app) as httpd:
-        print('Serving on port 8000...')
+    with make_server('', PORT, app) as httpd:
+        print('Serving your scene on port %d' % PORT)
         httpd.serve_forever()

@@ -1,4 +1,5 @@
 .vercel
 data/pouet
 data/demozoo
-data/output
+data/datapackage.json
+data/*.gz

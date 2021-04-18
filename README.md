@@ -43,7 +43,9 @@ At this point you should see the message "Serving on port..." Test the API using
 
 `http://localhost:8000/productions`
 
-You can provide a (precise) search string by appending a parameter with the name of the field. Or put the field name into the `sort` parameter to change the order (optionally add `reverse`). Adjust the amount of output with a `page` and `per_page` parameter in your query.
+You can provide a (precise) search string by appending a parameter with the name of the field. Or put the field name into the `sort` parameter to change the order (optionally add `reverse`). There is also a `random` and `lucky` parameter.
+
+Adjust the amount of output with a `page` and `per_page` parameter in your query.
 
 For example, to show the latest Commodore 64 productions:
 
